@@ -1,0 +1,51 @@
+.rastreamento{
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+
+.etapas div{
+
+background:#222;
+
+margin:15px;
+
+padding:15px;
+
+border-radius:10px;
+
+transition:0.5s;
+
+}
+
+
+
+.pagamento{
+
+padding:30px;
+
+text-align:center;
+
+}
+
+
+
+.pagamento input,
+.pagamento select,
+.pagamento textarea{
+
+display:block;
+
+margin:10px auto;
+
+padding:12px;
+
+width:80%;
+
+border-radius:8px;
+
+}
