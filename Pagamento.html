@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pagamento - Toba's Pizzas</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💳 Finalizar Pedido</h1>
+
+<p>Toba's Pizzas</p>
+
+</header>
+
+
+
+<section class="pagamento">
+
+
+<h2>📍 Como deseja receber?</h2>
+
+
+<label>
+
+<input 
+type="radio" 
+name="entrega" 
+value="delivery"
+onclick="mostrarEndereco()">
+
+🚚 Delivery
+
+</label>
+
+
+<br><br>
+
+
+<label>
+
+<input 
+type="radio" 
+name="entrega" 
+value="retirada"
+onclick="esconderEndereco()">
+
+🏪 Retirada na loja
+
+</label>
+
+
+
+
+
+<div id="endereco" style="display:none;">
+
+
+<h2>📍 Endereço de entrega</h2>
+
+
+<input placeholder="Nome completo">
+
+
+<input placeholder="Telefone">
+
+
+<input placeholder="Rua">
+
+
+<input placeholder="Número">
+
+
+<input placeholder="Bairro">
+
+
+<input placeholder="Complemento">
+
+
+<textarea placeholder="Observação do pedido"></textarea>
+
+
+</div>
+
+
+
+
+
+
+<h2>🎁 Cupom de desconto</h2>
+
+
+<input 
+id="cupomPagamento"
+placeholder="Digite seu cupom">
+
+
+<button onclick="aplicarCupomPagamento()">
+
+Aplicar
+
+</button>
+
+
+
+<p id="mensagemCupom"></p>
+
+
+
+
+
+<h2>💰 Forma de pagamento</h2>
+
+
+
+<select id="pagamento">
+
+
+<option>Pix</option>
+
+<option>Cartão de crédito</option>
+
+<option>Cartão de débito</option>
+
+<option>Dinheiro</option>
+
+
+</select>
+
+
+
+
+
+<div id="troco">
+
+
+<input placeholder="Troco para quanto?">
+
+</div>
+
+
+
+
+
+<h2>🛒 Resumo do pedido</h2>
+
+
+<div id="resumo"></div>
+
+
+
+<h2>
+
+Total:
+R$ <span id="valorFinal">0</span>
+
+</h2>
+
+
+
+
+<button onclick="finalizarPedido()">
+
+✅ Finalizar Pedido
+
+</button>
+
+
+
+</section>
+
+
+
+
+<script src="js/pagamento.js"></script>
+
+
+</body>
+
+</html>
